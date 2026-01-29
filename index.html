@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Portfolio - Szablon Lekcyjny</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --primary: #38bdf8;
+            --secondary: #a855f7;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            color: var(--text-main);
+            line-height: 1.6;
+            background-image:url(https://i.makeagif.com/media/7-25-2025/9fP14r.gif) ;
+        }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+
+        header {
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: bold; font-size: 1.2rem; color: var(--primary); }
+
+        /* SEKCJA POWITANIE */
+        .hero {
+            text-align: center;
+            padding: 80px 0;
+        }
+        
+        .avatar-placeholder {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            margin: 0 auto 30px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+        }
+
+        h1 { font-size: 3rem; margin-bottom: 10px; }
+        .subtitle { color: var(--primary); font-size: 1.2rem; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px; }
+        .bio { max-width: 600px; margin: 0 auto; color: var(--text-muted); }
+
+        /* SEKCJA KART (GRID) */
+        .my-interests { padding: 60px 0; }
+        .section-header { margin-bottom: 40px; }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card, .card2 {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 4px solid var(--primary);
+            transition: transform 0.3s;
+        }
+        
+        .card:hover { transform: translateY(-5px); border-left-color: var(--secondary); }
+        .card2:hover { transform: translateY(-5px); border-left-color: var(--secondary); background-image:url(./chinese-emoticon-22648577.png); }
+        .card h3, .card2 h3 { margin-bottom: 10px; color: var(--text-main); }
+        .card p, .card2 p { font-size: 0.9rem; color: var(--text-muted); }
+
+        /* STOPKA */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Responsywność */
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Portfolio: Nina Lesiak</div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="avatar-placeholder" style=" background-image:url(https://i.makeagif.com/media/7-25-2025/9fP14r.gif) ;">
+                JA
+            </div>
+
+            <div class="subtitle">Web Designer in training</div>
+            <h1>Siemano, jestem <span style="color: var(--secondary)">Nina</span></h1>
+            
+            <p class="bio">
+                Jedna ciekawostka o sobie.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <img src="./9fP14r.gif" alt="please subscribe" style="  display: block;
+  margin: auto;
+  width: 50%;">
+    </section>
+
+    <section class="my-interests">
+        <div class="container">
+            <div class="section-header">
+                <h2>Czym się zajmuję?</h2>
+                <p style="color: var(--text-muted)">Moje hobby i umiejętności</p>
+            </div>
+
+            <div class="grid">
+                <div class="card">
+                    <h3>Przepis na bigos</h3>
+                    <p>Składniki:
+
+1,5 kg kiszonej kapusty
+1 kg słodkiej kapusty
+1-1,5 kg mieszanego, dość chudego mięsa (np. wołowiny, cielęciny, wieprzowiny, indyka)
+20 dag kiełbasy
+30 dag wędzonego boczku
+ok. 1 litra bulionu lub wody
+ok.10 suszonych śliwek
+kilka suszonych grzybów
+4 duże cebule
+¾ szklanki czerwonego wytrawnego wina
+1 duża łyżka koncentratu pomidorowego
+4 liście laurowe
+6-8 ziaren jałowca
+pieprz i sól
+smalec, ewentualnie olej do smażenia
+
+Sposób przygotowania:
+
+Przygotowywanie bigosu zaczynam wieczorem dnia poprzedniego od namoczenia grzybów w niewielkiej ilości wody. Potem tylko lekko je obgotuję i dodam do garnka razem z wodą, w której się gotowały.
+
+Teraz kapusta. Pewnie, że najlepiej, jeśli ta kiszona nie jest zbyt kwaśna, ale nie zawsze można spróbować przed zakupem. Dlatego w skrajnych przypadkach płucze się ją wodą. Tym razem jednak jest idealna, ani zbyt kwaśna, ani zbyt słona. Kroję ją na mniejsze kawałki, zalewam bulionem lub wodą (w moim przypadku prawie zawsze wodą), dodaję liście laurowe i jałowiec, przykrywam i gotuję na małym ogniu. Biorę do tego największy gar jaki mam w domu, a i tak zazwyczaj okazuje się, że ledwie daję radę w nim mieszać.
+
+W drugim garnku (rozsądniejszych rozmiarów) zalewam wodą poszatkowaną słodką kapustę i również gotuję.
+Mieszam od czasu do czasu, żeby się nie przypaliło.
+
+Gdy kapusta się gotuje przesmażam partiami na dużym ogniu pokrojone na małe kawałki mięsa, boczek i kiełbasę, a następnie kroję cebulę w półplasterki i rumienię na patelni.
+Pewnie spora część z Was wzdraga się ze wstrętem na widok samego słowa „smalec” podanego w przepisie. Niesłusznie! Prawdziwy bigos to nie delikatne polędwiczki smażone na maśle, ani też warzywa podsmażane na oliwie. Prawdziwy bigos wymaga odpowiedniego tłuszczu i jest to właśnie smalec i basta!
+
+Niektórzy twierdzą też, że boczek i kiełbasę należy dodać zdecydowanie później niż surowe mięsa, ale nie zawracam sobie tym głowy.
+
+Wreszcie przechodzę do meritum. Przekładam wszystko do tego największego gara jaki mam w domu, dodaję śliwki, koncentrat, grzyby wraz z wodą, w której się gotowały (można je pokroić w paseczki, ale moim zdaniem nie ma takiej potrzeby), wlewam wino oraz wsypuję bardzo oszczędnie sól, za to bardzo hojnie pieprz.
+
+Przykrywam i wszystko gotuję na małym ogniu kilka godzin, pamiętam wszakże o regularnym mieszaniu, bo przypalona kapusta smakuje naprawdę okropnie. Gdyby bigos w którymkolwiek momencie wykazywał inklinacje do przywierania, dolewam trochę wody lub bulionu.
+
+Wreszcie zestawiam gar z kuchenki i próbuję. Jest bardzo dobrze, ale jeszcze nie idealnie. Schładzam lub nawet przemrażam bigos (jeśli mam taką możliwość, bo na balkonie akurat jest mróz) i gotuję jakąś godzinę następnego dnia.
+
+Jest prawie idealnie.
+
+Stan idealny bowiem bigos osiągnie po kilku seansach chłodzenia i podgrzewania, ale rzadko kiedy udaje mu się tak długo wytrwać, bo u mnie w domu też „jak kamfora ginie”, jak pisał wieszcz.</p>
+                </div>
+
+                <div class="card2">
+                    <h3>最喜欢的语言</h3>
+                    <p>结肠癌</p>
+                    <p>become chinese with me twin</p>
+                </div>
+
+                <div class="card">
+                    <h3>Cel na przyszłość</h3>
+                    <img src="./image.webp" alt="please subscribe" style="  display: block; margin: auto; width: 50%;"> <br>
+                    <img src="./image.webp" alt="please subscribe" style="  display: block; margin: auto; width: 50%;"> <br>
+                    <img src="./image.webp" alt="please subscribe" style="  display: block; margin: auto; width: 50%;"> <br>
+                    <img src="./image.webp" alt="please subscribe" style="  display: block; margin: auto; width: 50%;"> <br>
+                    <img src="./image.webp" alt="please subscribe" style="  display: block; margin: auto; width: 50%;"> <br>
+                    <img src="./image.webp" alt="please subscribe" style="  display: block; margin: auto; width: 50%;"> <br>
+                    <img src="./image.webp" alt="please subscribe" style="  display: block; margin: auto; width: 50%;"> <br>
+                    <img src="./image.webp" alt="please subscribe" style="  display: block; margin: auto; width: 50%;"> <br>
+                    <img src="./image.webp" alt="please subscribe" style="  display: block; margin: auto; width: 50%;"> <br>
+                    <img src="./image.webp" alt="please subscribe" style="  display: block; margin: auto; width: 50%;"> <br>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Projekt strony wykonany przez: <strong>Nine Lesiak!!121!!!!@!!</strong></p>
+        </div>
+    </footer>
+
+</body>
+</html>
